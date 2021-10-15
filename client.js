@@ -1,10 +1,10 @@
 class OnlineClientLoader_Client {
   constructor() {
-    var v3 = new v3Lib();
+    this.v3 = new v3Lib();
     this.start();
   }
 
   start() {
-    console.log("Hello, World!");
+    this.v3.join(prompt("Server Code", "AAAA"), prompt("Username", "Guest"));
   }
 }
