@@ -25,7 +25,7 @@ class v3Lib {
 
     join(code, name) {
         this.code = code;
-        var plr = p[2].replace("x", "*").replace("X", "&");
+        var plr = name.replace("x", "*").replace("X", "&");
         fetch(`${this.site}/users_j:${code}x${plr}`);
         window.onbeforeunload = () => {
             fetch(`${this.site}/users_l:${code}x${plr}}`);
