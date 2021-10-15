@@ -46,7 +46,7 @@ class v3Lib {
             }
 
             var data = {
-                cookies: Game.cookies,
+                cookies: Game.cookies - last.cookies,
                 upgrades: upgradesOwned
             };
 
