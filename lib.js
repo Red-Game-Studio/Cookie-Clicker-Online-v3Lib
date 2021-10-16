@@ -71,6 +71,9 @@ class v3Lib {
             }
 
             this.last = this.serverData;
+            
+            return {players: this.last.playerList, playersInGame: this.last.playerAmount, error: 0};
         }
+        return {error: 1};
     }
 }
