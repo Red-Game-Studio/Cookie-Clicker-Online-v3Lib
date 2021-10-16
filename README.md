@@ -9,5 +9,5 @@ v3Lib. Please fork to make clients.
 
 - ```constructor( website [optional] )``` Website Override.
 - ```join(code, name)``` Join Server. Set code to an empty string to join a mini server
-- ```handleData()```  Returns cookies, upgrade IDs, player list and player amount.
+- ```handleData()```  Handles cookies and upgrade IDs. Returns player list and player amount.
 - ```upload()``` Uploads Everything.
