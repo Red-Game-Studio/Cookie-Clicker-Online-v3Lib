@@ -31,6 +31,10 @@ class v3Lib {
             fetch(`${this.site}/users_l:${code}x${plr}}`);
             return null;
         };
+        fetch(`${this.site}/users_u:${this.code}x{"cookies": 0, "upgrades": []}`).then((x) => x.json().then(res => {
+            this.serverData = res;
+            this.last = res;
+        }));
     }
 
     upload() {
@@ -71,7 +75,7 @@ class v3Lib {
             }
 
             this.last = this.serverData;
-            
+
             return {players: this.last.playerList, playersInGame: this.last.playerAmount, error: 0};
         }
         return {error: 1};
